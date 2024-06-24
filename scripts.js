@@ -1,5 +1,11 @@
-const supabaseUrl = window.env.SUPABASE_URL;
-const supabaseKey = window.env.SUPABASE_KEY;
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+    console.error('Missing SUPABASE_URL or SUPABASE_KEY environment variables. Check Netlify configuration.');
+}
+
+const { createClient } = supabase;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
