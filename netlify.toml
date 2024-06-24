@@ -1,0 +1,6 @@
+[build]
+  publish = "./"
+  command = "echo 'No build command necessary'"
+
+[build.environment]
+  NODE_ENV = "production"

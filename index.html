@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Enter username">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="blog" style="display: none;">
+            <h2>Welcome, <span id="user"></span></h2>
+            <button onclick="logout()">Logout</button>
+            <h3>Create a Post</h3>
+            <input type="text" id="title" placeholder="Title">
+            <textarea id="content" placeholder="Content"></textarea>
+            <button onclick="createPost()">Post</button>
+            <h3>Posts</h3>
+            <div id="posts"></div>
+        </div>
+    </div>
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>
