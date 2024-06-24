@@ -1,0 +1,15 @@
+{
+  "name": "simple-blog",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/6a918791-1369-46b8-a902-ec28641d6284/deploy-status)](https://app.netlify.com/sites/blopple/deploys)",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
