@@ -1,7 +1,4 @@
 import { supabase } from './supabase.js'
-import dotenv from 'dotenv'
-
-dotenv.config()
 
 let currentUser = null;
 
