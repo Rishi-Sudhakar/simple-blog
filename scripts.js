@@ -1,4 +1,7 @@
-import { supabase } from './supabase.js'
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 let currentUser = null;
 
